@@ -1,0 +1,10 @@
+start
+    class CT1
+        public static void main()
+            output "Olive Garden Italian Restaurant"
+            output "1617 W Bethany Home Rd"
+            output "Phoenix, AZ 85015"
+        return
+    endClass
+stop
+
