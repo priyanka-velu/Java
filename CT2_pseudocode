@@ -1,0 +1,32 @@
+start
+    import java Scanner
+
+    class CT2
+        public void main()
+            Declarations
+                num income
+                double taxRate
+                double withholding
+            Scanner = Scanner(input)
+            
+            print "Enter your weekly income: "
+            income <- USERINPUT
+
+            if income < 500 then
+                taxRate = 0.1
+                withholding = income * taxRate
+            else if income >= 500 and income < 1500 then
+                taxRate = 0.15
+                withholding = income * taxRate
+            else if income >= 1500 and income < 2500 then
+                taxRate = 0.2
+                withholding = income * taxRate
+            else if income >= 2500 then
+                taxRate = 0.3
+                withholding = income * taxRate
+        
+            print "According to your weekly income of $", income, ", your tax rate is ", taxRate*100, "% and your weekly average tax withholding is $", withholding, "."
+        return
+    endClass
+stop
+
