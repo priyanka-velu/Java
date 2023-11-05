@@ -1,0 +1,47 @@
+start
+    import java Scanner
+
+    class CT4
+        public void main()
+            Declarations
+                double n = 10
+                double total = 0
+                double average = 0
+            
+            Scanner = Scanner(input)
+            double[] array = new double[10]
+            
+            // output array
+            print "Enter 10 numbers: "
+            for int i = 0; i < n; i++ then
+                array[i] <- USERINPUT
+            
+            print "The array elements are: "
+            for int i = 0; i < n; i++ then
+                print(array[i])
+
+            Declarations
+                double min = array[0]
+                double max = array[0]
+            
+            // average
+            for int i = 0; i < n; i++ then
+                total += array[i]
+            average <- total / n
+
+            // minimum
+            for int i = 0; i < n; i++ then
+                if array[i] < min then
+                    min = array[i]
+            
+            // maximum
+            for int i = 0; i < n; i++ then
+                if array[i] > max then
+                    max = array[i]
+        
+            print "Average: ", average
+            print "Maximum: ", max
+            print "Minimum: ", min
+        return
+    endClass
+stop
