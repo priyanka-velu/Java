@@ -1,0 +1,55 @@
+start
+    import java Scanner
+    import java ArrayList
+
+    class CT5
+        public void main()
+            Declarations
+
+        ArrayList<String> weekDays = new ArrayList<String>()
+        ArrayList<Integer> weekTemps = new ArrayList<Integer>()
+
+        weekDays <- add("Monday")
+        weekDays <- add("Tuesday")
+        weekDays <- add("Wednesday")
+        weekDays <- add("Thursday")
+        weekDays <- add("Friday")
+        weekDays <- add("Saturday")
+        weekDays <- add("Sunday")
+
+        weekTemps <- add(70)
+        weekTemps <- add(73)
+        weekTemps <- add(85)
+        weekTemps <- add(80)
+        weekTemps <- add(82)
+        weekTemps <- add(79)
+        weekTemps <- add(77)
+
+        Scanner = Scanner(input)
+        Declarations
+            String day
+            int indexDay
+            int i
+
+        print "Enter a day of the week (Monday-Sunday) to obtain the temperature for that day or enter (week) for the weekly temperature: "
+        day <- USERINPUT
+        indexDay = weekDays.indexOf(day)
+
+        if indexDay != -1 then
+                print "The temperature for " + weekDays.get(indexDay) + " is " + weekTemps.get(indexDay) + " degrees."
+        else if day.equals("week") then
+            float avgTemp = 0
+
+            for i = 0; i < weekDays.size(); ++i then
+                print "Day: " + weekDays.get(i) + ", Temperature: " + weekTemps.get(i)
+
+            for Integer weekTemp : weekTemps
+                avgTemp <- avgTemp + weekTemp
+            
+            avgTemp /= weekTemps.size()
+            print "The weekly average temperature is " + avgTemp + " degrees."
+        else
+            print "Sorry, that was an invalid option. Please try again."
+        return
+    endClass
+stop
